@@ -165,7 +165,7 @@ textarea {
   box-shadow: 0 3px 10px $black;
   min-width: 166px;
   max-height: 80%;
-  overflow-y: scroll;
+  overflow-y: inherit;
 
   h3 {
     margin-top: 0;
@@ -185,7 +185,7 @@ textarea {
   }
 
   &.positioned {
-    transform: translate(-50%, -100%);
+    transform: translate(-182%, -153%);
 
     .button-wrap {
       &::before {
