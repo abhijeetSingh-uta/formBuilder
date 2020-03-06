@@ -1077,7 +1077,7 @@ export default class Helpers {
       {
         type: 'button',
         id: 'save',
-        className: 'btn btn-primary save-template',
+        className: 'btn btn-success save-template',
         events: {
           click: evt => {
             _this.save()
