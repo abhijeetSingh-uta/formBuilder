@@ -518,7 +518,7 @@ export default class Helpers {
     const overlay = m('div', null, {
       className: 'form-builder-overlay',
     })
-    document.body.appendChild(overlay)
+    document.getElementsByClassName('form-builder-wrap')[0].appendChild(overlay)
     overlay.classList.add('visible')
 
     overlay.addEventListener('click', ({ target }) => this.closeConfirm(target), false)
@@ -575,7 +575,7 @@ export default class Helpers {
     miniModal.style.left = coords.pageX + 'px'
     miniModal.style.top = coords.pageY + 'px'
 
-    document.body.appendChild(miniModal)
+    document.getElementsByClassName('form-builder-wrap')[0].appendChild(miniModal)
 
     yes.focus()
     return miniModal
@@ -610,7 +610,7 @@ export default class Helpers {
     miniModal.style.left = coords.pageX + 'px'
     miniModal.style.top = coords.pageY + 'px'
 
-    document.body.appendChild(miniModal)
+    document.getElementsByClassName('form-builder-wrap')[0].appendChild(miniModal)
 
     document.dispatchEvent(events.modalOpened)
 

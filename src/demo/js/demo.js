@@ -253,9 +253,9 @@ jQuery(function($) {
   function toggleEdit() {
     document.body.classList.toggle('form-rendered', editing)
     if (!editing) {
-      $('.build-wrap').formBuilder('setData', $('.render-wrap').formRender('userData'))
+      $('.form-builder-wrap').formBuilder('setData', $('.render-wrap').formRender('userData'))
     } else {
-      const formRenderData = $('.build-wrap').formBuilder('getData', dataType)
+      const formRenderData = $('.form-builder-wrap').formBuilder('getData', dataType)
       $('.render-wrap').formRender({
         formData: formRenderData,
         templates: templates,
@@ -266,7 +266,7 @@ jQuery(function($) {
     return (editing = !editing)
   }
 
-  const formBuilder = $('.build-wrap').formBuilder(fbOptions)
+  const formBuilder = $('.form-builder-wrap').formBuilder(fbOptions)
 
   const fbPromise = formBuilder.promise
 
