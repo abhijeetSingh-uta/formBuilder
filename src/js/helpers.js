@@ -1060,6 +1060,7 @@ export default class Helpers {
       {
         type: 'button',
         id: 'clear',
+        label: '<i class="fa fa-trash-alt"></i> Clear',
         className: 'clear-all btn btn-danger',
         events: {
           click: _this.confirmRemoveAll.bind(_this),
@@ -1077,6 +1078,7 @@ export default class Helpers {
       {
         type: 'button',
         id: 'save',
+        label: '<i class="fa fa-save"></i> Save',
         className: 'btn btn-success save-template',
         events: {
           click: evt => {
